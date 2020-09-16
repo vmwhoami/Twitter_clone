@@ -1,11 +1,12 @@
-<div class="container">
-
-  <div class="section">
-    <h1>New Tweet</h1>
-    <div class="column is-4">
-      <%= render 'form', tweet: @tweet %>
-
-      <%= link_to 'Back', tweets_path %>
+<div class="container mt-6">
+  <div class="columns is-mobile is-centered">
+    <div class="column is-half">
+      <p class="bd-notification is-primary">
+        <%= render 'form', tweet: @tweet %>
+      </p>
+      <p class="bd-notification is-primary"></p>
+      <%= link_to 'Back', tweets_path  %>
+      </p>
     </div>
   </div>
 </div>
