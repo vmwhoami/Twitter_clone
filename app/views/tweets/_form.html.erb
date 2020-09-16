@@ -2,7 +2,7 @@
 <%= f.error_notification%>
 <div class="field">
   <div class="control">
-    <%= f.input :tweet, label: "Tweet about it", input_html:{class: "textarea" },wrapper:false , label_html: {class:"label"},placeholder:"Compose a new tweet..." %>
+    <%= f.input :tweet, label: "Tweet about it #{ current_user.name.upcase if current_user } !!!", input_html:{class: "textarea" },wrapper:false , label_html: {class:"label"},placeholder:"Compose a new tweet..." %>
   </div>
 </div>
 <%= f.submit "Tweet", class: "button is-info is-rounded" %>

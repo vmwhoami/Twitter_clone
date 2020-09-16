@@ -21,11 +21,12 @@
       </div>
       <div class="media-content">
         <div class="content">
-          <strong>Vitalie Melnic</strong><br />
-          <small>@vmwhoami</small><br />
+          <strong><%= tweet.user.name %></strong><br />
+          <small><%=  tweet.user.username %></small><br />
           <p><%= tweet.tweet%> </p>
         </div>
         <nav class="level">
+          <% if user_signed_in?%>
           <div class="level-left is-mobile">
             <%= link_to tweet, class: "level-item" do %>
             <span class="icon">
@@ -40,6 +41,7 @@
             <span class="icon"><i class="fas fa-trash-alt" aria-hidden="true"></i></span>
             <% end %>
           </div>
+          <%end%>
         </nav>
       </div>
     </article>
