@@ -1,5 +1,11 @@
-<h1>New Tweet</h1>
+<div class="container">
 
-<%= render 'form', tweet: @tweet %>
+  <div class="section">
+    <h1>New Tweet</h1>
+    <div class="column is-4">
+      <%= render 'form', tweet: @tweet %>
 
-<%= link_to 'Back', tweets_path %>
+      <%= link_to 'Back', tweets_path %>
+    </div>
+  </div>
+</div>

@@ -35,4 +35,6 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 
 .notification:not(:last-child){
   margin-bottom: 0px ;
+  border-radius: 0;
 }
+
