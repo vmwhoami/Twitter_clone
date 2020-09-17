@@ -16,7 +16,7 @@
         <div class="field is-grouped">
           <% if user_signed_in? %>
           <p class="control level">
-            <%= link_to "New Tweet", new_tweet_path ,class: 'button is-info is-inverted' %>
+            <%= link_to "New Tweet", root_path ,class: 'button is-info is-inverted' %>
           </p>
           <p class="control level">
             <%= link_to "Log out", destroy_user_session_path, method: :delete ,class: 'button is-info is-size-4 is-uppercase' %>
